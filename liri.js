@@ -18,14 +18,37 @@ if (command === "tweets") {
     var params = {screen_name: "trbrwstr"};
     client.get("statuses/user_timeline", params, function(error, tweets, response) {
         if (!error) {
-            console.log(tweets[0].text);
+            for (var k = 0; k < tweets.length; k++);
+
+            console.log("Tweet: "+ tweets[k].text);
         }
+            console.log("Number of Tweets: "+tweets.length);
     });
 }
 
 
 //Spotify
 
-if (command === "spotify-this") {
-    
-}
+//if (command === "spotify-this") {
+//    inquirer.prompt([
+//        {
+//            type: "input",
+//            message: "What song would you like search for?",
+//            name: "song"
+//       }
+//    ]).then(function (inquirerResponse) {
+//        var songToSearch = "";
+//        if (inquirerResponse.song === "") {
+//            songToSearch = "";
+//        }
+//        else {
+//            songToSearch = inquirerResponse.song;
+//        }
+//    })
+    //Artists
+
+//    for (var j = 0; j < 5; j++) {
+//        var artistsArr = [];
+//        for (var i = 0; 
+//};
+
